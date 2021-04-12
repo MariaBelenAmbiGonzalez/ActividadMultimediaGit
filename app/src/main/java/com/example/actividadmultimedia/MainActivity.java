@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
             // handling our errors.
 
             Log.e("TAG", "Error : " + e.toString());
+            e.getCause();
         }
     }
     //Prueba de branch
