@@ -28,20 +28,23 @@ import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    // creating a variable for exoplayerview.
+    //Creating a variable for Exoplayerview
     SimpleExoPlayerView exoPlayerView;
 
-    // creating a variable for exoplayer
+    //Creating a variable for exoplayer
     SimpleExoPlayer exoPlayer;
 
-    // url of video which we are loading.
-    String videoURL = "https://media.geeksforgeeks.org/wp-content/uploads/20201217163353/Screenrecorder-2020-12-17-16-32-03-350.mp4";
+    //Url of video which we are loading.
+    String videoURL = "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         exoPlayerView = findViewById(R.id.idExoPlayerVIew);
+
         try {
 
             // bandwisthmeter is used for
@@ -86,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             // below line is used for
             // handling our errors.
+
             Log.e("TAG", "Error : " + e.toString());
         }
     }
